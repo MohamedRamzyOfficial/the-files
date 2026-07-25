@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohamedramzyofficial.github.io/the-files/sitemap.xml

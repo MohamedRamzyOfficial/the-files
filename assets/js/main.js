@@ -1,22 +1,27 @@
 
-const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
-if (menuBtn && navLinks) menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('.nav-links');
+if(menu && nav) menu.addEventListener('click',()=>nav.classList.toggle('open'));
 
-const filterButtons = document.querySelectorAll('.filter-btn');
-const cards = document.querySelectorAll('.case-card');
-filterButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterButtons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    cards.forEach(card => {
-      const show = filter === 'all' || card.dataset.category.includes(filter);
-      card.style.display = show ? '' : 'none';
-    });
+const input = document.querySelector('#caseSearch');
+const cards = [...document.querySelectorAll('.card')];
+const filters = [...document.querySelectorAll('.filter')];
+let currentFilter='all';
+
+function applyFilters(){
+  const q=(input?.value||'').trim().toLowerCase();
+  cards.forEach(card=>{
+    const text=card.dataset.search.toLowerCase();
+    const category=card.dataset.category;
+    const visible=(currentFilter==='all'||category.includes(currentFilter)) && (!q||text.includes(q));
+    card.classList.toggle('hidden',!visible);
   });
-});
-
-document.querySelectorAll('[data-year]').forEach(el => {
-  el.textContent = new Date().getFullYear();
-});
+}
+if(input) input.addEventListener('input',applyFilters);
+filters.forEach(btn=>btn.addEventListener('click',()=>{
+  filters.forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter=btn.dataset.filter;
+  applyFilters();
+}));
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());

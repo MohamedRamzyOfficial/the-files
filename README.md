@@ -1,55 +1,23 @@
-# The Files — GitHub Pages Template
+# The Files v1.0
 
-قالب عربي RTL لموقع برنامج «ملفات» من محمد رمزي.
+النسخة الرسمية لموقع برنامج «الملفات» بهوية محمد رمزي.
 
-## طريقة الرفع على GitHub
+## الرفع
+ارفع كل محتويات المجلد إلى جذر مستودع `the-files` واستبدل الملفات الحالية.
 
-1. افتح مستودع `the-files`.
-2. احذف ملف `README.md` القديم إن رغبت.
-3. اضغط **Add file → Upload files**.
-4. ارفع كل محتويات هذا المجلد، وليس ملف ZIP نفسه.
-5. اضغط **Commit changes**.
-6. انتظر دقيقة، ثم افتح:
-   `https://mohamedramzyofficial.github.io/the-files/`
+## الصفحات
+- الصفحة الرئيسية: `index.html`
+- صفحات القضايا داخل `cases/`
+- صفحة الخطأ: `404.html`
 
-## تعديل كل قضية
+## الهوية
+- الشعار الأفقي: `assets/images/logo-horizontal.webp`
+- الشعار المربع: `assets/images/logo-square.webp`
+- البصمة/الأيقونة: `assets/images/favicon.png`
+- صورة الواجهة: `assets/images/hero-archive.webp`
 
-افتح الملف داخل مجلد `cases` ثم اضغط علامة القلم:
+## تعديل فيديو القضية
+داخل صفحة القضية، استبدل مربع الفيديو بـ iframe الخاص بيوتيوب.
 
-- `green-boots.html`
-- `elisa-lam.html`
-- `db-cooper.html`
-- `frank-abagnale.html`
-- `jimmy-hoffa.html`
-
-استبدل النصوص التجريبية بالمقال الحقيقي، وروابط `#` بروابط المصادر.
-
-## إضافة فيديو YouTube
-
-استبدل مربع الفيديو داخل صفحة القضية بكود التضمين:
-
-```html
-<div class="video-placeholder" style="padding:0;overflow:hidden">
-  <iframe width="100%" height="100%"
-    src="https://www.youtube.com/embed/VIDEO_ID"
-    title="YouTube video"
-    frameborder="0"
-    allowfullscreen></iframe>
-</div>
-```
-
-## إضافة قضية جديدة
-
-1. انسخ أحد ملفات القضايا.
-2. غيّر اسم الملف.
-3. عدّل المحتوى.
-4. أضف بطاقة جديدة في `index.html`.
-
-## الألوان والتصميم
-
-كل التصميم موجود في:
-`assets/css/style.css`
-
-## ملاحظة
-
-لا تضع صورًا محمية بحقوق نشر إلا مع ترخيص أو حق استخدام مناسب.
+## تعديل المصادر
+استبدل روابط `href="#"` بالروابط الحقيقية.
