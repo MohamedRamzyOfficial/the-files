@@ -137,3 +137,115 @@ img{display:block;max-width:100%}
   .grid,.method{grid-template-columns:1fr}
   .section-head{align-items:start;flex-direction:column}
 }
+
+
+/* ===== v1.1 layout correction ===== */
+.site-header{
+  height:72px;
+  display:block;
+}
+.nav{
+  height:72px;
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+}
+.logo img{
+  display:block;
+  width:180px !important;
+  max-width:180px !important;
+  height:54px !important;
+  max-height:54px !important;
+  object-fit:contain;
+}
+.nav-links{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:24px;
+  margin-right:auto;
+  white-space:nowrap;
+}
+.menu{
+  display:none !important;
+}
+.hero{
+  min-height:calc(100vh - 72px);
+  align-items:end;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.18) 42%,#060606 100%),
+    linear-gradient(90deg,rgba(0,0,0,.18),rgba(0,0,0,.02)),
+    url("../images/hero-archive.webp") center center / cover no-repeat !important;
+}
+.hero-content{
+  max-width:690px;
+  padding:0 0 58px;
+}
+.hero h1{
+  font-size:clamp(2.8rem,6vw,5.6rem);
+  margin:12px 0 14px;
+}
+.hero p{
+  max-width:620px;
+}
+@media(max-width:900px){
+  .nav-links{
+    display:none;
+    position:absolute;
+    right:16px;
+    left:16px;
+    top:72px;
+    margin:0;
+    background:#090909;
+    border:1px solid #222;
+    border-radius:10px;
+    padding:16px;
+    flex-direction:column;
+    align-items:flex-start;
+    white-space:normal;
+  }
+  .nav-links.open{display:flex}
+  .menu{
+    display:block !important;
+    margin-right:auto;
+  }
+  .logo img{
+    width:145px !important;
+    max-width:145px !important;
+    height:46px !important;
+    max-height:46px !important;
+  }
+  .hero{
+    min-height:680px;
+    background-position:53% center !important;
+  }
+  .hero-content{
+    padding-bottom:42px;
+  }
+}
+@media(max-width:560px){
+  .hero{
+    min-height:620px;
+    background-position:52% center !important;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.42) 55%,#060606 100%);
+  }
+  .hero-content{
+    padding-bottom:34px;
+  }
+  .hero h1{
+    font-size:2.45rem;
+  }
+}
