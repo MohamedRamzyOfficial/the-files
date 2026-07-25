@@ -3,107 +3,94 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#060606">
-<meta name="description" content="الأرشيف الرسمي لبرنامج ملفات من محمد رمزي: قضايا حقيقية، مصادر أصلية، وثائق وتسلسل زمني.">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="منصة وثائقية عربية حديثة للقضايا الحقيقية، المصادر الأصلية، الأدلة والتسلسل الزمني.">
 <meta property="og:title" content="الملفات | The Files">
-<meta property="og:description" content="الأرشيف الرسمي لبرنامج ملفات من محمد رمزي: قضايا حقيقية، مصادر أصلية، وثائق وتسلسل زمني.">
+<meta property="og:description" content="منصة وثائقية عربية حديثة للقضايا الحقيقية، المصادر الأصلية، الأدلة والتسلسل الزمني.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/images/logo-square.webp">
+<meta property="og:image" content="assets/images/logo-square-v3.webp">
 <link rel="icon" href="assets/images/favicon.png">
-<link rel="stylesheet" href="assets/css/style.css?v=1.2">
+<link rel="stylesheet" href="assets/css/style.css?v=3.0">
 <title>الملفات | The Files</title>
 </head><body><header class="site-header"><div class="container nav">
-<a class="logo" href="index.html"><img src="assets/images/logo-header.png" alt="الملفات - The Files"></a>
-<button class="menu" aria-label="فتح القائمة">☰</button>
+<a class="logo" href="index.html"><img src="assets/images/logo-v3.png" alt="الملفات - The Files"></a>
 <nav class="nav-links">
 <a href="index.html">الرئيسية</a>
 <a href="index.html#latest">أحدث ملف</a>
-<a href="index.html#archive">الأرشيف</a>
-<a href="index.html#method">منهج التوثيق</a>
-<a href="index.html#about">عن البرنامج</a>
-</nav></div></header>
+<a href="index.html#browse">تصفح</a>
+<a href="index.html#categories">التصنيفات</a>
+</nav>
+<div class="nav-actions">
+<button class="icon-btn" data-open-search aria-label="بحث">⌕</button>
+<button class="menu-btn" aria-label="القائمة">☰</button>
+</div></div></header>
+<div class="search-panel"><div class="search-shell">
+<div class="search-top"><input id="globalSearch" type="search" placeholder="ابحث بالاسم، السنة أو التصنيف…"><button class="btn btn-secondary" data-close-search>إغلاق</button></div>
+<div class="search-results"><a class="search-result" data-search="جرين بوتس Green Boots 1996 ألغاز موثقة" href="cases/green-boots.html">
+<img src="assets/images/green-boots-v3.webp" alt="جرين بوتس">
+<div><h3>جرين بوتس</h3><p>FILE #001 · ألغاز · 1996</p></div></a><a class="search-result" data-search="إليسا لام Elisa Lam 2013 اختفاءات محل جدل" href="cases/elisa-lam.html">
+<img src="assets/images/elisa-lam-v3.webp" alt="إليسا لام">
+<div><h3>إليسا لام</h3><p>FILE #002 · اختفاءات · 2013</p></div></a><a class="search-result" data-search="دي بي كوبر D. B. Cooper 1971 ألغاز غير محلولة" href="cases/db-cooper.html">
+<img src="assets/images/db-cooper-v3.webp" alt="دي بي كوبر">
+<div><h3>دي بي كوبر</h3><p>FILE #003 · ألغاز · 1971</p></div></a><a class="search-result" data-search="فرانك أباغنيل Frank Abagnale 1960s خدع محل مراجعة" href="cases/frank-abagnale.html">
+<img src="assets/images/frank-abagnale-v3.webp" alt="فرانك أباغنيل">
+<div><h3>فرانك أباغنيل</h3><p>FILE #004 · خدع · 1960s</p></div></a><a class="search-result" data-search="جيمي هوفا Jimmy Hoffa 1975 اختفاءات غير محلولة" href="cases/jimmy-hoffa.html">
+<img src="assets/images/jimmy-hoffa-v3.webp" alt="جيمي هوفا">
+<div><h3>جيمي هوفا</h3><p>FILE #005 · اختفاءات · 1975</p></div></a></div></div></div>
 <main>
-<section class="hero"><div class="container hero-content">
-<div class="kicker">OFFICIAL INVESTIGATION ARCHIVE</div>
-<h1>كل قضية تترك دليلًا.</h1>
-<p>أرشيف وثائقي عربي يجمع الحلقة، القصة الكاملة، الأدلة، التسلسل الزمني والمصادر الأصلية في ملف واحد.</p>
-<div class="actions"><a class="btn btn-red" href="#archive">فتح الأرشيف</a><a class="btn btn-dark" href="#method">كيف نتحقق؟</a></div>
-</div></section>
+<section class="hero">
+<div class="container hero-content">
+<div class="hero-kicker">THE FILES ORIGINAL DOCUMENTARY ARCHIVE</div>
+<h1>قصص حقيقية.<br>موثقة بالمصادر.</h1>
+<p>منصة وثائقية عربية تجمع الحلقة، القصة الكاملة، الأدلة، النظريات والمصادر الأصلية في تجربة واحدة.</p>
+<div class="hero-meta"><span class="meta-pill">أرشيف عربي</span><span class="meta-pill">قضايا حقيقية</span><span class="meta-pill">مصادر أصلية</span></div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="cases/jimmy-hoffa.html">▶ مشاهدة أحدث ملف</a>
+<a class="btn btn-secondary" href="#browse">⌕ تصفح الأرشيف</a>
+</div></div>
+</section>
 
 <section class="section" id="latest"><div class="container">
-<div class="section-head"><div><div class="red-line"></div><h2>أحدث تحقيق</h2></div><p>آخر ملف تمت إضافته إلى الأرشيف.</p></div>
-<div class="latest">
-<div class="latest-art"><div class="latest-no">FILE #005</div><h3>جيمي هوفا</h3></div>
-<div class="latest-copy"><div class="kicker">JIMMY HOFFA / 1975</div><h2>خرج لاجتماع… واختفى للأبد.</h2>
-<div class="meta"><span class="tag red">غير محلولة</span><span class="tag">اختفاء</span><span class="tag">1975</span></div>
-<p>زعيم نقابي أمريكي كان يملك نفوذًا هائلًا، ثم اختفى في ظروف غامضة وسط نظريات مرتبطة بالجريمة المنظمة.</p>
-<a class="btn btn-red" href="cases/jimmy-hoffa.html">فتح التحقيق</a></div>
-</div></div></section>
-
-<section class="section section-dark" id="archive"><div class="container">
-<div class="section-head"><div><div class="red-line"></div><h2>أرشيف الملفات</h2></div><p>ابحث بالاسم أو التصنيف أو السنة.</p></div>
-<div class="tools">
-<label class="search"><span>⌕</span><input id="caseSearch" type="search" placeholder="ابحث داخل الملفات…"></label>
-<div class="filters"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="اختفاء">اختفاء</button><button class="filter" data-filter="غير محلولة">غير محلولة</button><button class="filter" data-filter="محل">محل جدل</button></div>
-</div>
-<div class="grid">
-<article class="card" data-category="إيفرست موثقة" data-search="جرين بوتس Green Boots 1996 إيفرست موثقة">
-<a href="cases/green-boots.html">
-<div class="card-top"><div class="file-no">FILE #001</div><h3>جرين بوتس</h3></div>
-<div class="card-body">
-<div class="meta"><span class="tag red">موثقة</span><span class="tag">إيفرست</span><span class="tag">1996</span></div>
-<p>جثة متسلق بقيت لسنوات علامة صامتة على أحد أشهر طرق الصعود إلى قمة إيفرست.</p>
-<div class="open"><span>فتح الملف</span><span>←</span></div>
-</div></a></article>
-<article class="card" data-category="اختفاء محل جدل" data-search="إليسا لام Elisa Lam 2013 اختفاء محل جدل">
-<a href="cases/elisa-lam.html">
-<div class="card-top"><div class="file-no">FILE #002</div><h3>إليسا لام</h3></div>
-<div class="card-body">
-<div class="meta"><span class="tag red">محل جدل</span><span class="tag">اختفاء</span><span class="tag">2013</span></div>
-<p>اختفاء داخل فندق سيسيل، وتسجيل أسانسير تحوّل إلى واحد من أشهر مقاطع القضايا الغامضة.</p>
-<div class="open"><span>فتح الملف</span><span>←</span></div>
-</div></a></article>
-<article class="card" data-category="خطف طائرة غير محلولة" data-search="دي بي كوبر D. B. Cooper 1971 خطف طائرة غير محلولة">
-<a href="cases/db-cooper.html">
-<div class="card-top"><div class="file-no">FILE #003</div><h3>دي بي كوبر</h3></div>
-<div class="card-body">
-<div class="meta"><span class="tag red">غير محلولة</span><span class="tag">خطف طائرة</span><span class="tag">1971</span></div>
-<p>رجل خطف طائرة، حصل على فدية، قفز بالمظلة ثم اختفى بلا أثر مؤكد.</p>
-<div class="open"><span>فتح الملف</span><span>←</span></div>
-</div></a></article>
-<article class="card" data-category="خداع محل مراجعة" data-search="فرانك أباغنيل Frank Abagnale 1960s خداع محل مراجعة">
-<a href="cases/frank-abagnale.html">
-<div class="card-top"><div class="file-no">FILE #004</div><h3>فرانك أباغنيل</h3></div>
-<div class="card-body">
-<div class="meta"><span class="tag red">محل مراجعة</span><span class="tag">خداع</span><span class="tag">1960s</span></div>
-<p>الأسطورة التي ألهمت فيلمًا عالميًا، ثم بدأت سجلات حقيقية تشكك في أجزاء أساسية منها.</p>
-<div class="open"><span>فتح الملف</span><span>←</span></div>
-</div></a></article>
-<article class="card" data-category="اختفاء غير محلولة" data-search="جيمي هوفا Jimmy Hoffa 1975 اختفاء غير محلولة">
-<a href="cases/jimmy-hoffa.html">
-<div class="card-top"><div class="file-no">FILE #005</div><h3>جيمي هوفا</h3></div>
-<div class="card-body">
-<div class="meta"><span class="tag red">غير محلولة</span><span class="tag">اختفاء</span><span class="tag">1975</span></div>
-<p>زعيم نقابي نافذ خرج إلى اجتماع واختفى للأبد وسط شبهات مرتبطة بالجريمة المنظمة.</p>
-<div class="open"><span>فتح الملف</span><span>←</span></div>
-</div></a></article></div>
+<div class="section-title-row"><div><h2>أحدث تحقيق</h2></div><p>FILE #005</p></div>
+<div class="feature">
+<div class="feature-image"><img src="assets/images/jimmy-hoffa-v3.webp" alt="جيمي هوفا"></div>
+<div class="feature-copy">
+<div class="eyebrow">THE FILES ORIGINAL · 1975</div>
+<h2>جيمي هوفا</h2>
+<p>رجل كان بيقابل رؤساء أمريكا، وبيحرك ملايين الدولارات بإشارة… خرج لاجتماع واختفى للأبد.</p>
+<div class="hero-meta"><span class="meta-pill">غير محلولة</span><span class="meta-pill">اختفاءات</span><span class="meta-pill">12 دقيقة</span></div>
+<div class="hero-actions"><a class="btn btn-primary" href="cases/jimmy-hoffa.html">▶ فتح الملف</a><a class="btn btn-secondary" href="cases/jimmy-hoffa.html#sources">المصادر</a></div>
+</div></div>
 </div></section>
 
-<section class="section" id="method"><div class="container">
-<div class="section-head"><div><div class="red-line"></div><h2>منهج التوثيق</h2></div></div>
-<div class="method">
-<div class="method-card"><strong>01</strong><h3>المصدر الأصلي أولًا</h3><p>وثيقة رسمية، سجل محكمة، جهة تحقيق أو أرشيف صحفي أصلي كلما أمكن.</p></div>
-<div class="method-card"><strong>02</strong><h3>الحقيقة منفصلة عن النظرية</h3><p>كل معلومة تُصنّف بوضوح: مثبتة، مرجحة، محل خلاف أو مجرد ادعاء.</p></div>
-<div class="method-card"><strong>03</strong><h3>الملف قابل للتحديث</h3><p>عند ظهور معلومات موثوقة جديدة، يتم تحديث الصفحة وتسجيل تاريخ المراجعة.</p></div>
+<section class="section" id="browse"><div class="container">
+<div class="section-title-row"><h2>تابع آخر الملفات</h2><button class="icon-btn" data-open-search aria-label="بحث">⌕</button></div>
+<div class="rail-wrap" data-rail>
+<button class="rail-arrow prev" aria-label="السابق">›</button>
+<div class="rail"><a class="rail-card" href="cases/jimmy-hoffa.html">
+<img src="assets/images/jimmy-hoffa-v3.webp" alt="جيمي هوفا">
+<div class="rail-card-content"><div class="file-no">FILE #005</div><h3>جيمي هوفا</h3><p>خرج لاجتماع… واختفى للأبد.</p></div></a><a class="rail-card" href="cases/frank-abagnale.html">
+<img src="assets/images/frank-abagnale-v3.webp" alt="فرانك أباغنيل">
+<div class="rail-card-content"><div class="file-no">FILE #004</div><h3>فرانك أباغنيل</h3><p>القصة التي صدقها العالم… قد تكون أكبر خدعة فيها.</p></div></a><a class="rail-card" href="cases/db-cooper.html">
+<img src="assets/images/db-cooper-v3.webp" alt="دي بي كوبر">
+<div class="rail-card-content"><div class="file-no">FILE #003</div><h3>دي بي كوبر</h3><p>أخذ الفدية، فتح باب الطائرة، ثم اختفى في العاصفة.</p></div></a><a class="rail-card" href="cases/elisa-lam.html">
+<img src="assets/images/elisa-lam-v3.webp" alt="إليسا لام">
+<div class="rail-card-content"><div class="file-no">FILE #002</div><h3>إليسا لام</h3><p>آخر ظهور لها كان داخل أسانسير… وبعدها بدأت الأسئلة.</p></div></a><a class="rail-card" href="cases/green-boots.html">
+<img src="assets/images/green-boots-v3.webp" alt="جرين بوتس">
+<div class="rail-card-content"><div class="file-no">FILE #001</div><h3>جرين بوتس</h3><p>جثة تحولت إلى علامة طريق فوق أخطر جبل في العالم.</p></div></a></div>
+<button class="rail-arrow next" aria-label="التالي">‹</button>
 </div></div></section>
 
-<section class="section section-dark" id="about"><div class="container about">
-<div class="about-logo"><img src="assets/images/logo-square.webp" alt="شعار الملفات"></div>
-<div><div class="red-line"></div><h2>عن «الملفات»</h2>
-<p>مش مجرد فيديو قصير. كل حلقة لها ملف مستقل يضم القصة بالتفصيل، وما هو مؤكد، وما بقي مجهولًا، والمصادر التي بُني عليها التحقيق.</p>
-<p>مشروع وثائقي مستقل من إعداد وتقديم محمد رمزي.</p>
+<section class="section" id="categories"><div class="container">
+<div class="section-title-row"><h2>استكشف حسب النوع</h2><p>اختار نوع القضية اللي يهمك.</p></div>
+<div class="genre-grid">
+<a class="genre" href="#browse"><strong>اختفاءات</strong><span>إليسا لام، جيمي هوفا والمزيد</span></a>
+<a class="genre" href="#browse"><strong>ألغاز</strong><span>دي بي كوبر، جرين بوتس والمزيد</span></a>
+<a class="genre" href="#browse"><strong>خدع</strong><span>قصص شهيرة تحت المراجعة</span></a>
+<a class="genre" href="#browse"><strong>ملفات غير محلولة</strong><span>قضايا ما زالت بلا إجابة نهائية</span></a>
 </div></div></section>
 </main><footer class="footer"><div class="container footer-row">
-<img src="assets/images/logo-header.png" alt="The Files">
-<div>© <span data-year></span> Mohamed Ramzy — جميع الحقوق محفوظة.</div>
-</div></footer><script src="assets/js/main.js?v=1.2"></script></body></html>
+<img src="assets/images/logo-v3.png" alt="The Files">
+<div>© <span data-year></span> Mohamed Ramzy — The Files</div>
+</div></footer>
+<script src="assets/js/main.js?v=3.0"></script></body></html>
